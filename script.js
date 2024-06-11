@@ -82,7 +82,7 @@ dropButton.addEventListener('click', () => {
 });
 
 dropButton.addEventListener('mousedown', () => {
-    droppingInterval = setInterval(dropBall, 500); // Drops a ball every 500ms
+    droppingInterval = setInterval(dropBall, 10); // Drops a ball every 500ms
 });
 
 dropButton.addEventListener('mouseup', () => {
@@ -94,7 +94,7 @@ dropButton.addEventListener('mouseleave', () => {
 });
 
 dropButton.addEventListener('touchstart', () => {
-    droppingInterval = setInterval(dropBall, 500);
+    droppingInterval = setInterval(dropBall, 10);
 });
 
 dropButton.addEventListener('touchend', () => {
