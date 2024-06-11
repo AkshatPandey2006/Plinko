@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.game-info {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.game-info p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+input[type="number"] {
+    width: 100px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid #61dafb;
+    background: #2c2c2c;
+    color: #fff;
+    text-align: center;
+}
+
+input[type="number"]::placeholder {
+    color: #aaa;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    color: #282c34;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #21a1f1;
+    transform: scale(1.05);
+}
+
+.board-container {
+    display: flex;
+    justify-content: center;
+}
+
+.board {
+    position: relative;
+    width: 450px; /* Adjusted width to fit all slots */
+    height: 500px;
+    background: #2c2c2c;
+    border: 2px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.peg {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #61dafb;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.multiplier-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -2px; /* To make it touch the board */
+}
+
+.slot {
+    flex: 1;
+    height: 40px;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #61dafb;
+    color: #282c34;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 0; /* Square shape */
+}
+
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    transition: top 0.2s linear, left 0.2s linear;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}

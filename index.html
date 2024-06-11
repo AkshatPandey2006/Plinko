@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plinko Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-info">
+            <h1>Plinko Game</h1>
+            <p>Total Amount: $<span id="total-amount">1000</span></p>
+            <p>Highest Total: $<span id="highest-total">0</span></p>
+            <input type="number" id="bet-amount" placeholder="Bet Amount" min="1" max="1000">
+            <button id="drop-button">Drop Ball</button>
+        </div>
+        <div class="board-container">
+            <div class="board" id="plinko-board">
+                <!-- The pegs will be dynamically generated here -->
+            </div>
+        </div>
+        <div class="multiplier-container" id="multiplier-container">
+            <!-- The multipliers will be dynamically generated here -->
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
